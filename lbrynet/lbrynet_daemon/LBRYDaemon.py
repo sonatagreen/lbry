@@ -57,7 +57,7 @@ from lbrynet.core.PTCWallet import PTCWallet
 from lbrynet.core.LBRYWallet import LBRYcrdWallet, LBRYumWallet
 from lbrynet.lbryfilemanager.LBRYFileManager import LBRYFileManager
 from lbrynet.lbryfile.LBRYFileMetadataManager import DBLBRYFileMetadataManager, TempLBRYFileMetadataManager
-from lbrynet.reflector.server import ReflectorServerFactory
+from lbrynet.reflector.server.server import ReflectorServerFactory
 # from lbryum import LOG_PATH as lbryum_log
 
 
