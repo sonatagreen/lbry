@@ -12,7 +12,7 @@ from lbrynet.lbryfile.StreamDescriptor import publish_sd_blob
 from lbrynet.core.PaymentRateManager import PaymentRateManager
 from lbrynet.core.LBRYMetadata import Metadata, CURRENT_METADATA_VERSION
 from lbrynet.lbryfilemanager.LBRYFileDownloader import ManagedLBRYFileDownloader
-from lbrynet.reflector.client import LBRYFileReflectorClientFactory
+from lbrynet.reflector.client.client import LBRYFileReflectorClientFactory
 from lbrynet.conf import LOG_FILE_NAME, REFLECTOR_SERVERS
 from twisted.internet import threads, defer, reactor
 
