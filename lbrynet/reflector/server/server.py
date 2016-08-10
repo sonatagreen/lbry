@@ -121,6 +121,7 @@ class ReflectorServer(Protocol):
         return d
 
     def send_response(self, response_dict):
+        log.info("Reflector server send response: %s", json.dumps(response_dict))
         self.transport.write(json.dumps(response_dict))
 
     def handle_error(self, err):

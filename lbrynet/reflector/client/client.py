@@ -215,6 +215,7 @@ class LBRYFileReflectorClient(Protocol):
         elif self.blob_hashes_to_send:
             # open the next blob to send
             blob_hash = self.blob_hashes_to_send[0]
+            log.info("Send blob %s", blob_hash)
             self.blob_hashes_to_send = self.blob_hashes_to_send[1:]
             d = self.blob_manager.get_blob(blob_hash, True)
             d.addCallback(self.open_blob_for_reading)

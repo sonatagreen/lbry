@@ -685,6 +685,7 @@ class LBRYDaemon(jsonrpc.JSONRPC):
 
     def _start_reflector(self):
         if self.run_reflector_server:
+            log.info("starting reflector")
             if self.reflector_port is not None:
                 reflector_factory = ReflectorServerFactory(self.session.peer_manager, self.session.blob_manager)
                 try:
@@ -697,6 +698,7 @@ class LBRYDaemon(jsonrpc.JSONRPC):
 
     def _stop_reflector(self):
         if self.run_reflector_server:
+            log.info("stopping reflector")
             try:
                 if self.reflector_server_port is not None:
                     self.reflector_server_port, p = None, self.reflector_server_port
