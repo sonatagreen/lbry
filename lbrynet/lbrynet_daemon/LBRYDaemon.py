@@ -177,7 +177,7 @@ class LBRYDaemon(jsonrpc.JSONRPC):
         self.uploaded_temp_files = []
 
         # change this to enable reflector server
-        self.run_reflector_server = False
+        self.run_reflector_server = True
 
         if os.name == "nt":
             from lbrynet.winhelpers.knownpaths import get_path, FOLDERID, UserHandle
